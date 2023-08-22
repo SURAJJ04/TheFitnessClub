@@ -1,9 +1,10 @@
-require('../backend/dbconnect');
+const connectDb =  require('../backend/dbconnect');
 const exp = require('constants');
 const hbs = require('hbs');
 const express = require('express');
 const bcrypt = require('bcryptjs');
 
+connectDb();
 const app = express();
 
 const path = require('path');
