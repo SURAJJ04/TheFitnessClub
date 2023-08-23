@@ -1,28 +1,28 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
-const bookNowSchema = new mongoose.Schema({
+const allData = new mongoose.Schema({
     name: {
         type: String,
-        required: true,
+        required: true
     },
     email: {
-        type: String,
-        required: true,
-        unique: true
+        type: String
     },
     phone: {
-        type: Number,
-        required: true,
-        unique: true
+        type: Number
     },
     day: {
-        type: String,
-        required: true
+        type: String
     },
     time: {
-        type: String,
-        required: true
+        type: String
+    },
+    service: {
+        type: String
+    },
+    message: {
+        type: String
     }
 });
 
@@ -44,10 +44,7 @@ const classDBTemp = new mongoose.Schema({
         type: String,
         required: true
     },
-    service: {
-        required:true,
-        type: String,
-    }
+
 });
 
 const contactTemp = new mongoose.Schema({
@@ -59,15 +56,12 @@ const contactTemp = new mongoose.Schema({
         type: String,
         required: true,
     },
-    message: {
-        required: true,
-        type: String
-    }
+
 });
 
+const BookNow = new mongoose.model("Data-all", allData);
 const Contact = new mongoose.model("ContactDB", contactTemp);
 const ClassDB = new mongoose.model("ClassesDB", classDBTemp);
-const BookNow = new mongoose.model("BookNow-Data", bookNowSchema);
 
 module.exports = BookNow;
 module.exports = ClassDB;
