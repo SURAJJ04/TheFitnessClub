@@ -45,6 +45,7 @@ const classDBTemp = new mongoose.Schema({
         required: true
     },
     service: {
+        required:true,
         type: String,
     }
 });
@@ -59,6 +60,7 @@ const contactTemp = new mongoose.Schema({
         required: true,
     },
     message: {
+        required: true,
         type: String
     }
 });
