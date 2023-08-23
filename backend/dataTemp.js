@@ -63,17 +63,6 @@ const contactTemp = new mongoose.Schema({
     }
 });
 
-const loginSchema = new mongoose.Schema({
-    email: {
-        type: String,
-        unique: true
-    },
-    password: {
-        type: String,
-    }
-})
-
-const Login = new mongoose.model("LoginDB", loginSchema);
 const Contact = new mongoose.model("ContactDB", contactTemp);
 const ClassDB = new mongoose.model("ClassesDB", classDBTemp);
 const BookNow = new mongoose.model("BookNow-Data", bookNowSchema);
