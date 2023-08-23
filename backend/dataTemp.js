@@ -70,4 +70,3 @@ const BookNow = new mongoose.model("BookNow-Data", bookNowSchema);
 module.exports = BookNow;
 module.exports = ClassDB;
 module.exports = Contact;
-module.exports = Login;
