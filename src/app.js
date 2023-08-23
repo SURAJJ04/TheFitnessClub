@@ -11,7 +11,6 @@ const path = require('path');
 const BookNow = require('../backend/dataTemp');
 const ClassDB = require('../backend/dataTemp');
 const Contact = require('../backend/dataTemp');
-const Login = require('../backend/dataTemp');
 
 // Paths
 const staticPath = path.join(__dirname, '../public');
