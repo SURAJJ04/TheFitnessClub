@@ -9,9 +9,13 @@ const contactTemp = new mongoose.Schema({
         type: String,
         required: true,
     },
-
+    message: {
+        type: String,
+        required: true,
+    }
 });
 
 const Contact = new mongoose.model("ContactDB", contactTemp);
 
 module.exports = Contact;
+
