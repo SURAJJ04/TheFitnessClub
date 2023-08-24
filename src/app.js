@@ -1,4 +1,4 @@
-const connectDb =  require('../backend/dbconnect');
+const connectDb = require('../backend/dbconnect');
 const exp = require('constants');
 const hbs = require('hbs');
 const express = require('express');
@@ -8,9 +8,9 @@ connectDb();
 const app = express();
 
 const path = require('path');
-const BookNow = require('../backend/dataTemp');
-const ClassDB = require('../backend/dataTemp');
-const Contact = require('../backend/dataTemp');
+const BookNow = require('../backend/db/BookNow');
+const ClassDB = require('../backend/db/OurClasses');
+const Contact = require('../backend/db/Contact');
 
 // Paths
 const staticPath = path.join(__dirname, '../public');
