@@ -18,7 +18,9 @@ const classDBTemp = new mongoose.Schema({
         type: String,
         required: true
     },
-
+    service: {
+        type: String,
+    }
 });
 
 const ClassDB = new mongoose.model("ClassesDB", classDBTemp);
