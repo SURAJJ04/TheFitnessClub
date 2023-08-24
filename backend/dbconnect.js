@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb+srv://surajjadhav00787:kwdCk1ICwlPVpIvG@userdata.vtyuqsp.mongodb.net/?retryWrites=true&w=majority");
+        await mongoose.connect("mongodb+srv://surajjadhav00787:FvaexoO75FCB8zFw@userdata.zzk0jom.mongodb.net/?retryWrites=true&w=majority");
         
         console.log("DB Connected");
     } catch (error) {
