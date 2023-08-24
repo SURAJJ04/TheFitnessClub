@@ -21,6 +21,6 @@ const bookTemp = new mongoose.Schema({
 });
 
 
-const BookNow = new mongoose.model("Data-all", bookTemp);
+const BookNow = new mongoose.model("BookNow", bookTemp);
 
 module.exports = BookNow;
