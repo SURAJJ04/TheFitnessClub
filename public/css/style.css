@@ -1,5 +1,10 @@
 /* body banner css */
 /* bg-img */
+
+html {
+  scroll-behavior: smooth;
+}
+
 .banner-1 {
     background-image: url("../img/bg-img-2.jpg");
 
